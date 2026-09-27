@@ -1,0 +1,337 @@
+{
+  "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
+  "version": "unspecified",
+  "patches": [
+    {
+      "name": "Aspect ratio control",
+      "description": "Adds a Fit/Stretch toggle to the player.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.crunchyroll.crunchyroid",
+          "name": "Crunchyroll",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#F47521",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "3.117.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            },
+            {
+              "version": null,
+              "versionCodes": null,
+              "isExperimental": true,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Automatic skip controls",
+      "description": "Adds a floating window with separate switches for native intro, recap and other content skips.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.netflix.mediaclient",
+          "name": "Netflix",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#E50914",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "9.85.0 build 4 74576",
+              "versionCodes": {
+                "ARM64_V8A": 74576,
+                "ARMEABI_V7A": 74576,
+                "X86_64": 74576,
+                "X86": 74576
+              },
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Clone Netflix (startup test)",
+      "description": "Installs Netflix Clone alongside stock Netflix. Bypasses package-length decoding, DexGuard integrity checks, and self-exit callers.",
+      "default": false,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.netflix.mediaclient",
+          "name": "Netflix",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#E50914",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "9.85.0 build 4 74576",
+              "versionCodes": {
+                "ARM64_V8A": 74576,
+                "ARMEABI_V7A": 74576,
+                "X86_64": 74576,
+                "X86": 74576
+              },
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Playback speed",
+      "description": "Unhides the player's speed menu and fills it out to 0.5x-2.0x.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.crunchyroll.crunchyroid",
+          "name": "Crunchyroll",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#F47521",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "3.117.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            },
+            {
+              "version": null,
+              "versionCodes": null,
+              "isExperimental": true,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Playback speed and aspect ratio",
+      "description": "Adds playback speed, aspect ratio and automatic intro-skip controls.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.disney.disneyplus",
+          "name": "Disney+",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#0C204A",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "26.14.1+rc2-2026.08.20",
+              "versionCodes": {
+                "ARM64_V8A": 178724737,
+                "ARMEABI_V7A": 178724737,
+                "X86_64": 178724737,
+                "X86": 178724737
+              },
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            },
+            {
+              "version": null,
+              "versionCodes": null,
+              "isExperimental": true,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Remove ads",
+      "description": "Removes pre-roll and mid-roll video ads, and the display banners.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.viki.android",
+          "name": "Viki",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#0C9CFF",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "26.5.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            },
+            {
+              "version": null,
+              "versionCodes": null,
+              "isExperimental": true,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Startup baseline (no modifications)",
+      "description": "Rebuilds and signs Netflix for startup testing without adding skip controls or extension code. Select this patch alone.",
+      "default": false,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.netflix.mediaclient",
+          "name": "Netflix",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#E50914",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "9.85.0 build 4 74576",
+              "versionCodes": {
+                "ARM64_V8A": 74576,
+                "ARMEABI_V7A": 74576,
+                "X86_64": 74576,
+                "X86": 74576
+              },
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Subtitle styling",
+      "description": "Adds subtitle size, font and outline controls to the player.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.crunchyroll.crunchyroid",
+          "name": "Crunchyroll",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#F47521",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "3.117.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            },
+            {
+              "version": null,
+              "versionCodes": null,
+              "isExperimental": true,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Trace Netflix clone termination",
+      "description": "Creates the startup-test clone and records direct or reflective process termination. Diagnostic only; does not prevent exit or enable skip controls.",
+      "default": false,
+      "dependencies": [
+        "ResourcePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.netflix.mediaclient",
+          "name": "Netflix",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#E50914",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "9.85.0 build 4 74576",
+              "versionCodes": {
+                "ARM64_V8A": 74576,
+                "ARMEABI_V7A": 74576,
+                "X86_64": 74576,
+                "X86": 74576
+              },
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Use the whole screen for video",
+      "description": "Hides the comments panel beside the player on tablets and unfolded foldables.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.viki.android",
+          "name": "Viki",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#0C9CFF",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "26.5.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            },
+            {
+              "version": null,
+              "versionCodes": null,
+              "isExperimental": true,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    }
+  ]
+}
