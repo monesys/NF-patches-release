@@ -1,12 +1,14 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "0.1.46",
+  "version": "0.1.47",
   "patches": [
     {
       "name": "Automatic skip controls",
       "description": "Adds a floating window with separate switches for native intro, recap and other content skips.",
       "default": true,
-      "dependencies": [],
+      "dependencies": [
+        "ResourcePatch"
+      ],
       "compatiblePackages": [
         {
           "packageName": "com.netflix.mediaclient",
