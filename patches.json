@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "0.1.42",
+  "version": "0.1.45",
   "patches": [
     {
       "name": "Automatic skip controls",
@@ -35,7 +35,7 @@
     },
     {
       "name": "Netflix startup fix",
-      "description": "Bypasses DexGuard integrity checks and self-termination. Patches the stock APK directly without cloning.",
+      "description": "Neutralizes process self-termination (Process.sendSignal / killProcess) at native ART and bytecode level while allowing normal service initialization.",
       "default": false,
       "dependencies": [
         "BytecodePatch"
