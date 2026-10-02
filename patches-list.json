@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "0.1.41",
+  "version": "0.1.42",
   "patches": [
     {
       "name": "Automatic skip controls",
@@ -34,8 +34,8 @@
       "options": []
     },
     {
-      "name": "Clone Netflix (startup test)",
-      "description": "Installs Netflix Clone alongside stock Netflix. Bypasses package-length decoding, DexGuard integrity checks, and self-exit callers.",
+      "name": "Netflix startup fix",
+      "description": "Bypasses DexGuard integrity checks and self-termination. Patches the stock APK directly without cloning.",
       "default": false,
       "dependencies": [
         "BytecodePatch"
@@ -98,8 +98,8 @@
       "options": []
     },
     {
-      "name": "Trace Netflix clone termination",
-      "description": "Creates the startup-test clone and records direct or reflective process termination. Diagnostic only; does not prevent exit or enable skip controls.",
+      "name": "Trace Netflix termination",
+      "description": "Records direct or reflective process termination calls. Diagnostic only; does not prevent exit or enable skip controls.",
       "default": false,
       "dependencies": [
         "ResourcePatch"
