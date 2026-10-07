@@ -1,10 +1,10 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "0.1.60",
+  "version": "0.1.62",
   "patches": [
     {
       "name": "Automatic skip controls",
-      "description": "Adds a floating window with separate switches for native intro, recap, next episode and other content skips.",
+      "description": "Adds a floating window with separate switches for native intro, recap, next episode, end credits and other content skips with HUD notifications.",
       "default": true,
       "dependencies": [
         "ResourcePatch"
