@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-10-08T11:24:25",
+  "created_at": "2026-10-08T12:07:13",
   "description": "Netflix patches bundle",
-  "download_url": "https://github.com/monesys/NF-patches-release/releases/download/build-0069/patches.mpp",
+  "download_url": "https://github.com/monesys/NF-patches-release/releases/download/build-0070/patches.mpp",
   "signature_download_url": "",
-  "version": "0.1.69"
+  "version": "0.1.70"
 }
